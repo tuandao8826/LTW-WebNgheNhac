@@ -1,0 +1,53 @@
+﻿@model WebNgheNhac.Models.CaSi
+@{
+    ViewBag.Title = "Thêm mới nghệ sĩ";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-main">
+    <h2>Thêm nghệ sĩ</h2>
+
+    @using (Html.BeginForm("Create", "Singers", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="edit">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="edit__box">
+                <label class="edit__box-label">Họ và tên</label>
+                <input class="edit__box-input" type="text" name="HoTen" id="HoTen" />
+            </div>
+
+            <div class="edit__box">
+                <label class="edit__box-label">Ngày sinh</label>
+                <input class="edit__box-input" type="date" name="NgaySinh" id="NgaySinh" />
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.GioiTinh, "Giới tính", htmlAttributes: new { @class = "edit__box-label" })
+                <select id="GioiTinh" name="GioiTinh" class="edit__box-selecet">
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Nam">Khác</option>
+                </select>
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.GioiThieu, "Giới thiệu", htmlAttributes: new { @class = "edit__box-label" })
+                @Html.EditorFor(model => model.GioiThieu, new { htmlAttributes = new { @class = "edit__box-input" } })
+                @Html.ValidationMessageFor(model => model.GioiThieu, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.HinhCaSi, "Ảnh đại diện", htmlAttributes: new { @class = "edit__box-label" })
+                <input type="file" name="HinhCaSi" id="HinhCaSi" style="font-size: 1.6rem;" />
+            </div>
+
+            <div class="edit-submit">
+                @Html.ActionLink("Hủy", "Index", null, new { @class = "info-btn" })
+                <input type="submit" value="Tạo mới" class="edit-submit__btn" />
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,63 @@
+﻿@model WebNgheNhac.Models.TaiKhoan
+
+@{
+    Layout = null;
+}
+<head>
+    <title>Đăng Ký</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="~/Assets/Css/base.css" rel="stylesheet" />
+    <link href="~/Assets/Css/user.css" rel="stylesheet" />
+</head>
+
+<body class="container__users">
+    <div class="users__bg">
+        <div class="users__bg-shape"></div>
+        <div class="users__bg-shape"></div>
+    </div>
+
+    <div class="register__form">
+        @using (Html.BeginForm("Register", "Users"))
+        {
+            @Html.ValidationSummary(true);
+            @Html.AntiForgeryToken()
+            <h3 class="users__form-title">Đăng ký</h3>
+
+            <div>
+                <label class="users__form-lable" for="fullname">Họ Và Tên</label>
+                <input class="users__form-input" type="text" placeholder="Fullname" id="fullname" name="HoTen" >
+                @Html.ValidationMessageFor(model => model.HoTen)
+            </div>
+
+            <div>
+                <label class="users__form-lable" for="username">Tên Đăng Nhập</label>
+                <input class="users__form-input" type="text" placeholder="Username" id="username" name="Username" >
+                @Html.ValidationMessageFor(model => model.Username)
+            </div>
+
+            <div>
+                <label class="users__form-lable" for="password">Mật Khẩu</label>
+                <input class="users__form-input" type="password" placeholder="Password" id="password" name="MatKhau" >
+                @Html.ValidationMessageFor(model => model.MatKhau)
+            </div>
+
+            <div>
+                <label class="users__form-lable" for="email">Email</label>
+                <input class="users__form-input" type="email" placeholder="Email" id="email" name="Email">
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+
+            <div class="users__form-button">
+                <button class="users__form-btn" type="submit">Đăng ký</button>
+            </div>
+
+            <div class="users__form-option">
+                Bạn đã có tài khoản?
+                @Html.ActionLink("Đăng nhập", "Login", "Users")
+            </div>
+        }
+    </div>
+</body>

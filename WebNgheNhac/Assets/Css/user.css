@@ -1,0 +1,467 @@
+﻿/* Account Layout */
+.header {
+    background-color: var(--text-color);
+    height: var(--height-header-account);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--height-header-account);
+    padding: 0 16px;
+}
+
+.header__logo {
+}
+
+.header__logo-link {
+}
+
+.header__logo-img {
+    width: 131px;
+    height: 40px;
+    color: var(--white-color);
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__user:hover > .header__sub-user {
+    display: block;
+}
+
+.header__user:hover > .header__user-name {
+    color: var(--btn-hover-account);
+}
+
+.header__user:hover .header__user-img {
+    border-color: var(--btn-hover-account);
+}
+
+.header__user-image {
+}
+
+.header__user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+    border: 2px solid var(--text-not-hover);
+}
+
+.header__user-name {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    padding-left: 10px;
+}
+
+.header__sub-user {
+    position: absolute;
+    right: -10px;
+    top: calc(100% + 10px);
+    background-color: var(--white-color);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.header__sub-user::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 150px;
+    height: 20px;
+    bottom: calc(100% - 5px);
+}
+
+.sub-user__navbar {
+    width: 160px;
+}
+
+.sub-user__navbar-item.active .sub-user__navbar-link {
+    color: var(--text-color);
+}
+
+.sub-user__navbar-link {
+    font-size: 1.6rem;
+    color: var(--text-not-hover);
+    padding: 4px 16px;
+    width: 100%;
+    display: block;
+    font-weight: 600;
+}
+
+.sub-user__navbar-link:hover {
+    color: var(--btn-hover-account) !important;
+}
+
+.sub-user__navbar-item:first-child .sub-user__navbar-link {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.sub-user__navbar-item:last-child .sub-user__navbar-link {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* content */
+.content {
+    background-color: #1A263B;
+    margin-top: var(--height-header-account);
+}
+
+/* div-left */
+.div-left {
+    min-height: 100vh;
+    background-color: #1B1B1B;
+}
+
+.div-image {
+}
+
+.div-image__img {
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-size: cover;
+    margin: 30px auto;
+    border-radius: 100%;
+    border: 2px solid var(--text-not-hover);
+}
+
+/* navbar */
+.nav {
+}
+
+.nav__list {
+}
+
+.nav__list-item.active > .nav__list-link {
+    border-left-color: var(--btn-hover-account);
+}
+
+.nav__list-link {
+    display: block;
+    padding: 15px 15px 15px 30px;
+    border-top: 1px solid var(--line-color);
+    border-bottom: 1px solid var(--line-color);
+    border-left: 4px solid transparent;
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.nav__list-link:hover {
+    border-left-color: var(--btn-hover-account);
+}
+
+.nav__list-icon {
+    font-size: 2rem;
+    color: var(--white-color);
+    width: 30px;
+}
+
+
+/* div-right */
+.content .row .div-right {
+    min-height: 100vh;
+    background-color: var(--white-color);
+    padding: 48px;
+}
+
+/* details: thông tin tài khoản */
+.content-main > h2 {
+    font-size: 4.8rem;
+    color: var(--text-color);
+    padding-bottom: 32px;
+}
+
+.info-content {
+    margin-bottom: 24px;
+}
+
+.info-content > h4 {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    padding-bottom: 24px;
+}
+
+.info-box {
+    display: flex;
+    border-bottom: 1px solid var(--text-not-hover);
+}
+
+.info-box > span {
+    width: 50%;
+    padding: 14px 0;
+    font-size: 1.6rem;
+}
+
+.info-box-title {
+    color: var(--text-not-hover);
+}
+
+.info-box-desc {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.info-btn {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 8px 30px;
+    border-radius: 40px;
+    border: 1px solid var(--text-color);
+    background-color: var(--white-color);
+    display: inline-block;
+}
+
+.info-btn:hover {
+    transform: scale(1.04);
+}
+
+/* edit: chỉnh sửa tài khoản */
+.edit {
+    padding-bottom: 24px;
+}
+
+.edit__box {
+    padding-bottom: 24px;
+}
+
+.edit__box-label {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding-bottom: 8px;
+    display: block;
+    font-weight: 600;
+}
+
+.edit__box-input {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 8px 14px;
+    width: 100%;
+}
+
+.edit__box-selecet {
+    padding: 8px 44px 8px 14px;
+    width: 100%;
+}
+
+.edit__box-selecet option {
+    font-size: 1.6rem;
+}
+
+.edit-submit {
+    text-align: right;
+}
+
+.edit-submit__btn {
+    font-size: 1.6rem;
+    padding: 8px 32px;
+    font-weight: 600;
+    line-height: 1.8;
+    border-radius: 40px;
+}
+
+.edit-submit__btn:first-child {
+    color: var(--text-not-hover);
+}
+
+.edit-submit__btn:first-child:hover {
+    color: var(--text-color);
+}
+
+.edit-submit__btn:last-child {
+    background-color: var(--btn-hover-account);
+    color: var(--text-color);
+    border: none;
+}
+
+.edit-submit__btn:hover {
+    transform: scale(1.04);
+}
+
+.input-file {
+    font-size: 1.6rem;
+}
+/* Shared user */
+.container__users {
+    background-color: #080710;
+}
+
+.users__bg {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.users__bg-shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.users__bg-shape:first-child {
+    background: linear-gradient( #1845ad, #23a2f6 );
+    left: -80px;
+    top: -80px;
+}
+
+.users__bg-shape:last-child {
+    background: linear-gradient( to right, #ff512f, #f09819 );
+    right: -30px;
+    bottom: -80px;
+}
+
+.users__form-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.users__form-lable {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.users__form-input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+.users__form-button {
+    margin-top: 30px;
+}
+
+.users__form-btn {
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710 !important;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.users__form-option {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--white-color);
+}
+
+.users__form-option > a {
+    color: #3A82D4;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+
+.users__form-social {
+    margin-top: 30px;
+    display: flex;
+}
+
+.users__form-social div {
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255,255,255,0.27);
+    color: #eaf0fb;
+    text-align: center;
+}
+
+.users__form-social div:hover {
+    background-color: rgba(255,255,255,0.47);
+}
+
+.users__form-social-fb {
+    margin-left: 25px;
+}
+
+.users__form-social i {
+    margin-right: 4px;
+}
+
+.users__form-social-link:link {
+    text-decoration: none;
+}
+
+/* login */
+.login__form {
+    /*height: 520px;*/
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.login__form * {
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+/* register */
+.register__form {
+    /*height: 700px;*/
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.register__form * {
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}

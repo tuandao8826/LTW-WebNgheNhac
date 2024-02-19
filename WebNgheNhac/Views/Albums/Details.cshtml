@@ -1,0 +1,42 @@
+﻿@model WebNgheNhac.Models.Album
+
+@{
+    ViewBag.Title = "Chi tiết Album";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-main">
+    <h2>Tổng quan về Album</h2>
+
+    <div class="info-content">
+        <h4>Thông tin Album</h4>
+        <div class="info-box">
+            <span class="info-box-title">ID</span>
+            <span class="info-box-desc">@Model.IdAlbum</span>
+        </div>
+        <div class="info-box">
+            <span class="info-box-title">Tên Album</span>
+            <span class="info-box-desc">@Model.TenAlbum</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Ca sĩ</span>
+            <span class="info-box-desc">@Model.CaSi.HoTen</span>
+        </div>
+        <div class="info-box">
+            <span class="info-box-title">Hình Album</span>
+            <span class="info-box-desc">@Model.HinhAlbum</span>
+        </div>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="edit-submit" style="margin-top:20px;">
+                @Html.ActionLink("Trở về", "Index", null, new { @class = "info-btn" })
+            </div>
+        }
+    </div>
+   
+</div>
+

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WebNgheNhac.Models.BaiHat>
+@{
+    ViewBag.Title = "Chi tiết thể loại";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="index-container">
+    <div class="grid">
+        <div class="container-list">
+            <!-- thông tin thể loại nhạc -->
+            <div class="list__desc">
+                <div class="list__desc-title">Thể loại: @ViewBag.TenTheLoai</div>
+            </div>
+
+            <!-- danh sách nhạc -->
+            <div class="row">
+                @foreach (var itemSong in Model)
+                {
+                    <div class="col l-2 m-b-24px">
+                        <div class="list__item">
+                            <div class="list__item-img" style="background-image: url(../../Assets/Img/@itemSong.HinhBaiHat)">
+                                <div class="list__item-play">
+                                    <input type="hidden" id="TenBaiHat" value="@itemSong.TenBaiHat" />
+                                    <input type="hidden" id="TenCaSi" value="@itemSong.CaSi.HoTen" />
+                                    <input type="hidden" id="LinkBaiHat" value="~/Assets/Musics/@itemSong.LinkBaiHat" />
+                                    <input type="hidden" id="HinhBaiHat" value="../../Assets/Img/@itemSong.HinhBaiHat" />
+
+                                    <i class="list__item-icon list__item-icon-play fa-solid fa-play" style="padding-left: 2px;"></i>
+                                    <i class="list__item-icon list__item-icon-pause fa-solid fa-pause"></i>
+                                </div>
+                            </div>
+
+                            <div class="list__item-desc">
+                                <a href="~/Home/DetailsSong/@itemSong.IdBaiHat" class="list__item-name-song">@itemSong.TenBaiHat</a>
+                                <a href="~/Home/DetailsSinger/@itemSong.IdCaSi" class="list__item-name-singer">@itemSong.CaSi.HoTen</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

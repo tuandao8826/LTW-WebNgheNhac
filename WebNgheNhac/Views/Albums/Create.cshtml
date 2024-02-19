@@ -1,0 +1,45 @@
+﻿@model WebNgheNhac.Models.Album
+
+@{
+    ViewBag.Title = "Tạo Album mới";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-main">
+
+    <h2>Thêm Album</h2>
+
+    @using (Html.BeginForm("Create", "Albums", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="edit">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="edit__box">
+                @Html.LabelFor(model => model.TenAlbum, "Tên Album", htmlAttributes: new { @class = "edit__box-label" })
+                @Html.EditorFor(model => model.TenAlbum, new { htmlAttributes = new { @class = "edit__box-input" } })
+                @Html.ValidationMessageFor(model => model.TenAlbum, "", new { @class = "text-danger" })
+            </div>
+
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.IdCaSi, "Ca sĩ", htmlAttributes: new { @class = "edit__box-label" })
+                <div class="col-md-10">
+                    @Html.DropDownList("IdCaSi", null, htmlAttributes: new { @class = "edit__box-input" })
+                    @Html.ValidationMessageFor(model => model.IdCaSi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="edit__box">
+                @Html.LabelFor(model => model.HinhAlbum, "Hình Album", htmlAttributes: new { @class = "edit__box-label" })
+                <input type="file" name="HinhAlbum" class="input-file" />
+                @Html.ValidationMessageFor(model => model.HinhAlbum, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="edit-submit">
+                @Html.ActionLink("Hủy", "Index", null, new { @class = "edit-submit__btn" })
+                <input type="submit" value="Tạo mới" class="edit-submit__btn" />
+            </div>
+        </div>
+    }
+
+</div>

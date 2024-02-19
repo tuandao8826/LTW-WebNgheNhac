@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="QLWebNgheNhacModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Album">
+          <Key>
+            <PropertyRef Name="IdAlbum" />
+          </Key>
+          <Property Name="IdAlbum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenAlbum" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="HinhAlbum" Type="varchar" MaxLength="255" />
+          <Property Name="IdCaSi" Type="int" />
+        </EntityType>
+        <EntityType Name="BaiHat">
+          <Key>
+            <PropertyRef Name="IdBaiHat" />
+          </Key>
+          <Property Name="IdBaiHat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenBaiHat" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="LinkBaiHat" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="HinhBaiHat" Type="varchar" MaxLength="255" />
+          <Property Name="SoLanNghe" Type="int" />
+          <Property Name="IdCaSi" Type="int" />
+          <Property Name="IdTheLoai" Type="int" />
+          <Property Name="IdAlbum" Type="int" />
+        </EntityType>
+        <EntityType Name="CaSi">
+          <Key>
+            <PropertyRef Name="IdCaSi" />
+          </Key>
+          <Property Name="IdCaSi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="NgaySinh" Type="datetime" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
+          <Property Name="GioiThieu" Type="nvarchar" MaxLength="255" />
+          <Property Name="HinhCaSi" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="MyPlayList">
+          <Key>
+            <PropertyRef Name="IdBaiHat" />
+            <PropertyRef Name="IdPlayList" />
+          </Key>
+          <Property Name="IdBaiHat" Type="int" Nullable="false" />
+          <Property Name="IdPlayList" Type="int" Nullable="false" />
+          <Property Name="hihi" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="PlayList">
+          <Key>
+            <PropertyRef Name="IdPlayList" />
+          </Key>
+          <Property Name="IdPlayList" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenPlayList" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="HinhPlayList" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="255" />
+          <Property Name="IdTaiKhoan" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TaiKhoan">
+          <Key>
+            <PropertyRef Name="IdTaiKhoan" />
+          </Key>
+          <Property Name="IdTaiKhoan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MatKhau" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NgaySinh" Type="datetime" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
+          <Property Name="SoDienThoai" Type="varchar" MaxLength="11" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="255" />
+          <Property Name="NgayDangKy" Type="datetime" />
+          <Property Name="CheckTk" Type="bit" />
+          <Property Name="HinhTaiKhoan" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="IdTheLoai" />
+          </Key>
+          <Property Name="IdTheLoai" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenTheLoai" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="HinhTheLoai" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK__Album__IdCaSi__47DBAE45">
+          <End Role="CaSi" Type="Self.CaSi" Multiplicity="0..1" />
+          <End Role="Album" Type="Self.Album" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CaSi">
+              <PropertyRef Name="IdCaSi" />
+            </Principal>
+            <Dependent Role="Album">
+              <PropertyRef Name="IdCaSi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BaiHat__IdAlbum__4AB81AF0">
+          <End Role="Album" Type="Self.Album" Multiplicity="0..1" />
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Album">
+              <PropertyRef Name="IdAlbum" />
+            </Principal>
+            <Dependent Role="BaiHat">
+              <PropertyRef Name="IdAlbum" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BaiHat__IdCaSi__46E78A0C">
+          <End Role="CaSi" Type="Self.CaSi" Multiplicity="0..1" />
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CaSi">
+              <PropertyRef Name="IdCaSi" />
+            </Principal>
+            <Dependent Role="BaiHat">
+              <PropertyRef Name="IdCaSi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BaiHat__IdTheLoa__45F365D3">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="IdTheLoai" />
+            </Principal>
+            <Dependent Role="BaiHat">
+              <PropertyRef Name="IdTheLoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyPlayLis__IdBai__4BAC3F29">
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="1" />
+          <End Role="MyPlayList" Type="Self.MyPlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaiHat">
+              <PropertyRef Name="IdBaiHat" />
+            </Principal>
+            <Dependent Role="MyPlayList">
+              <PropertyRef Name="IdBaiHat" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyPlayLis__IdPla__49C3F6B7">
+          <End Role="PlayList" Type="Self.PlayList" Multiplicity="1" />
+          <End Role="MyPlayList" Type="Self.MyPlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlayList">
+              <PropertyRef Name="IdPlayList" />
+            </Principal>
+            <Dependent Role="MyPlayList">
+              <PropertyRef Name="IdPlayList" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PlayList__IdTaiK__48CFD27E">
+          <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="1" />
+          <End Role="PlayList" Type="Self.PlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaiKhoan">
+              <PropertyRef Name="IdTaiKhoan" />
+            </Principal>
+            <Dependent Role="PlayList">
+              <PropertyRef Name="IdTaiKhoan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLWebNgheNhacModelStoreContainer">
+          <EntitySet Name="Album" EntityType="Self.Album" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BaiHat" EntityType="Self.BaiHat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CaSi" EntityType="Self.CaSi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyPlayList" EntityType="Self.MyPlayList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PlayList" EntityType="Self.PlayList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Album__IdCaSi__47DBAE45" Association="Self.FK__Album__IdCaSi__47DBAE45">
+            <End Role="CaSi" EntitySet="CaSi" />
+            <End Role="Album" EntitySet="Album" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BaiHat__IdAlbum__4AB81AF0" Association="Self.FK__BaiHat__IdAlbum__4AB81AF0">
+            <End Role="Album" EntitySet="Album" />
+            <End Role="BaiHat" EntitySet="BaiHat" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BaiHat__IdCaSi__46E78A0C" Association="Self.FK__BaiHat__IdCaSi__46E78A0C">
+            <End Role="CaSi" EntitySet="CaSi" />
+            <End Role="BaiHat" EntitySet="BaiHat" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BaiHat__IdTheLoa__45F365D3" Association="Self.FK__BaiHat__IdTheLoa__45F365D3">
+            <End Role="TheLoai" EntitySet="TheLoai" />
+            <End Role="BaiHat" EntitySet="BaiHat" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyPlayLis__IdBai__4BAC3F29" Association="Self.FK__MyPlayLis__IdBai__4BAC3F29">
+            <End Role="BaiHat" EntitySet="BaiHat" />
+            <End Role="MyPlayList" EntitySet="MyPlayList" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyPlayLis__IdPla__49C3F6B7" Association="Self.FK__MyPlayLis__IdPla__49C3F6B7">
+            <End Role="PlayList" EntitySet="PlayList" />
+            <End Role="MyPlayList" EntitySet="MyPlayList" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PlayList__IdTaiK__48CFD27E" Association="Self.FK__PlayList__IdTaiK__48CFD27E">
+            <End Role="TaiKhoan" EntitySet="TaiKhoan" />
+            <End Role="PlayList" EntitySet="PlayList" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLWebNgheNhacModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Album">
+          <Key>
+            <PropertyRef Name="IdAlbum" />
+          </Key>
+          <Property Name="IdAlbum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenAlbum" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HinhAlbum" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IdCaSi" Type="Int32" />
+          <NavigationProperty Name="CaSi" Relationship="Self.FK__Album__IdCaSi__47DBAE45" FromRole="Album" ToRole="CaSi" />
+          <NavigationProperty Name="BaiHats" Relationship="Self.FK__BaiHat__IdAlbum__4AB81AF0" FromRole="Album" ToRole="BaiHat" />
+        </EntityType>
+        <EntityType Name="BaiHat">
+          <Key>
+            <PropertyRef Name="IdBaiHat" />
+          </Key>
+          <Property Name="IdBaiHat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenBaiHat" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LinkBaiHat" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="HinhBaiHat" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SoLanNghe" Type="Int32" />
+          <Property Name="IdCaSi" Type="Int32" />
+          <Property Name="IdTheLoai" Type="Int32" />
+          <Property Name="IdAlbum" Type="Int32" />
+          <NavigationProperty Name="Album" Relationship="Self.FK__BaiHat__IdAlbum__4AB81AF0" FromRole="BaiHat" ToRole="Album" />
+          <NavigationProperty Name="CaSi" Relationship="Self.FK__BaiHat__IdCaSi__46E78A0C" FromRole="BaiHat" ToRole="CaSi" />
+          <NavigationProperty Name="TheLoai" Relationship="Self.FK__BaiHat__IdTheLoa__45F365D3" FromRole="BaiHat" ToRole="TheLoai" />
+          <NavigationProperty Name="MyPlayLists" Relationship="Self.FK__MyPlayLis__IdBai__4BAC3F29" FromRole="BaiHat" ToRole="MyPlayList" />
+        </EntityType>
+        <EntityType Name="CaSi">
+          <Key>
+            <PropertyRef Name="IdCaSi" />
+          </Key>
+          <Property Name="IdCaSi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HoTen" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+          <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="GioiThieu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="HinhCaSi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Albums" Relationship="Self.FK__Album__IdCaSi__47DBAE45" FromRole="CaSi" ToRole="Album" />
+          <NavigationProperty Name="BaiHats" Relationship="Self.FK__BaiHat__IdCaSi__46E78A0C" FromRole="CaSi" ToRole="BaiHat" />
+        </EntityType>
+        <EntityType Name="MyPlayList">
+          <Key>
+            <PropertyRef Name="IdBaiHat" />
+            <PropertyRef Name="IdPlayList" />
+          </Key>
+          <Property Name="IdBaiHat" Type="Int32" Nullable="false" />
+          <Property Name="IdPlayList" Type="Int32" Nullable="false" />
+          <Property Name="hihi" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="BaiHat" Relationship="Self.FK__MyPlayLis__IdBai__4BAC3F29" FromRole="MyPlayList" ToRole="BaiHat" />
+          <NavigationProperty Name="PlayList" Relationship="Self.FK__MyPlayLis__IdPla__49C3F6B7" FromRole="MyPlayList" ToRole="PlayList" />
+        </EntityType>
+        <EntityType Name="PlayList">
+          <Key>
+            <PropertyRef Name="IdPlayList" />
+          </Key>
+          <Property Name="IdPlayList" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenPlayList" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HinhPlayList" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MoTa" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="IdTaiKhoan" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MyPlayLists" Relationship="Self.FK__MyPlayLis__IdPla__49C3F6B7" FromRole="PlayList" ToRole="MyPlayList" />
+          <NavigationProperty Name="TaiKhoan" Relationship="Self.FK__PlayList__IdTaiK__48CFD27E" FromRole="PlayList" ToRole="TaiKhoan" />
+        </EntityType>
+        <EntityType Name="TaiKhoan">
+          <Key>
+            <PropertyRef Name="IdTaiKhoan" />
+          </Key>
+          <Property Name="IdTaiKhoan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HoTen" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+          <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SoDienThoai" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NgayDangKy" Type="DateTime" Precision="3" />
+          <Property Name="CheckTk" Type="Boolean" />
+          <Property Name="HinhTaiKhoan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PlayLists" Relationship="Self.FK__PlayList__IdTaiK__48CFD27E" FromRole="TaiKhoan" ToRole="PlayList" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="IdTheLoai" />
+          </Key>
+          <Property Name="IdTheLoai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenTheLoai" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HinhTheLoai" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="BaiHats" Relationship="Self.FK__BaiHat__IdTheLoa__45F365D3" FromRole="TheLoai" ToRole="BaiHat" />
+        </EntityType>
+        <Association Name="FK__Album__IdCaSi__47DBAE45">
+          <End Role="CaSi" Type="Self.CaSi" Multiplicity="0..1" />
+          <End Role="Album" Type="Self.Album" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CaSi">
+              <PropertyRef Name="IdCaSi" />
+            </Principal>
+            <Dependent Role="Album">
+              <PropertyRef Name="IdCaSi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BaiHat__IdAlbum__4AB81AF0">
+          <End Role="Album" Type="Self.Album" Multiplicity="0..1" />
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Album">
+              <PropertyRef Name="IdAlbum" />
+            </Principal>
+            <Dependent Role="BaiHat">
+              <PropertyRef Name="IdAlbum" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BaiHat__IdCaSi__46E78A0C">
+          <End Role="CaSi" Type="Self.CaSi" Multiplicity="0..1" />
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CaSi">
+              <PropertyRef Name="IdCaSi" />
+            </Principal>
+            <Dependent Role="BaiHat">
+              <PropertyRef Name="IdCaSi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BaiHat__IdTheLoa__45F365D3">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="IdTheLoai" />
+            </Principal>
+            <Dependent Role="BaiHat">
+              <PropertyRef Name="IdTheLoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyPlayLis__IdBai__4BAC3F29">
+          <End Role="BaiHat" Type="Self.BaiHat" Multiplicity="1" />
+          <End Role="MyPlayList" Type="Self.MyPlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaiHat">
+              <PropertyRef Name="IdBaiHat" />
+            </Principal>
+            <Dependent Role="MyPlayList">
+              <PropertyRef Name="IdBaiHat" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyPlayLis__IdPla__49C3F6B7">
+          <End Role="PlayList" Type="Self.PlayList" Multiplicity="1" />
+          <End Role="MyPlayList" Type="Self.MyPlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlayList">
+              <PropertyRef Name="IdPlayList" />
+            </Principal>
+            <Dependent Role="MyPlayList">
+              <PropertyRef Name="IdPlayList" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PlayList__IdTaiK__48CFD27E">
+          <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="1" />
+          <End Role="PlayList" Type="Self.PlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaiKhoan">
+              <PropertyRef Name="IdTaiKhoan" />
+            </Principal>
+            <Dependent Role="PlayList">
+              <PropertyRef Name="IdTaiKhoan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLWebNgheNhacEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Albums" EntityType="Self.Album" />
+          <EntitySet Name="BaiHats" EntityType="Self.BaiHat" />
+          <EntitySet Name="CaSis" EntityType="Self.CaSi" />
+          <EntitySet Name="MyPlayLists" EntityType="Self.MyPlayList" />
+          <EntitySet Name="PlayLists" EntityType="Self.PlayList" />
+          <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+          <EntitySet Name="TheLoais" EntityType="Self.TheLoai" />
+          <AssociationSet Name="FK__Album__IdCaSi__47DBAE45" Association="Self.FK__Album__IdCaSi__47DBAE45">
+            <End Role="CaSi" EntitySet="CaSis" />
+            <End Role="Album" EntitySet="Albums" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BaiHat__IdAlbum__4AB81AF0" Association="Self.FK__BaiHat__IdAlbum__4AB81AF0">
+            <End Role="Album" EntitySet="Albums" />
+            <End Role="BaiHat" EntitySet="BaiHats" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BaiHat__IdCaSi__46E78A0C" Association="Self.FK__BaiHat__IdCaSi__46E78A0C">
+            <End Role="CaSi" EntitySet="CaSis" />
+            <End Role="BaiHat" EntitySet="BaiHats" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BaiHat__IdTheLoa__45F365D3" Association="Self.FK__BaiHat__IdTheLoa__45F365D3">
+            <End Role="TheLoai" EntitySet="TheLoais" />
+            <End Role="BaiHat" EntitySet="BaiHats" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyPlayLis__IdBai__4BAC3F29" Association="Self.FK__MyPlayLis__IdBai__4BAC3F29">
+            <End Role="BaiHat" EntitySet="BaiHats" />
+            <End Role="MyPlayList" EntitySet="MyPlayLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyPlayLis__IdPla__49C3F6B7" Association="Self.FK__MyPlayLis__IdPla__49C3F6B7">
+            <End Role="PlayList" EntitySet="PlayLists" />
+            <End Role="MyPlayList" EntitySet="MyPlayLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PlayList__IdTaiK__48CFD27E" Association="Self.FK__PlayList__IdTaiK__48CFD27E">
+            <End Role="TaiKhoan" EntitySet="TaiKhoans" />
+            <End Role="PlayList" EntitySet="PlayLists" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLWebNgheNhacModelStoreContainer" CdmEntityContainer="QLWebNgheNhacEntities">
+          <EntitySetMapping Name="Albums">
+            <EntityTypeMapping TypeName="QLWebNgheNhacModel.Album">
+              <MappingFragment StoreEntitySet="Album">
+                <ScalarProperty Name="IdAlbum" ColumnName="IdAlbum" />
+                <ScalarProperty Name="TenAlbum" ColumnName="TenAlbum" />
+                <ScalarProperty Name="HinhAlbum" ColumnName="HinhAlbum" />
+                <ScalarProperty Name="IdCaSi" ColumnName="IdCaSi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BaiHats">
+            <EntityTypeMapping TypeName="QLWebNgheNhacModel.BaiHat">
+              <MappingFragment StoreEntitySet="BaiHat">
+                <ScalarProperty Name="IdBaiHat" ColumnName="IdBaiHat" />
+                <ScalarProperty Name="TenBaiHat" ColumnName="TenBaiHat" />
+                <ScalarProperty Name="LinkBaiHat" ColumnName="LinkBaiHat" />
+                <ScalarProperty Name="HinhBaiHat" ColumnName="HinhBaiHat" />
+                <ScalarProperty Name="SoLanNghe" ColumnName="SoLanNghe" />
+                <ScalarProperty Name="IdCaSi" ColumnName="IdCaSi" />
+                <ScalarProperty Name="IdTheLoai" ColumnName="IdTheLoai" />
+                <ScalarProperty Name="IdAlbum" ColumnName="IdAlbum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CaSis">
+            <EntityTypeMapping TypeName="QLWebNgheNhacModel.CaSi">
+              <MappingFragment StoreEntitySet="CaSi">
+                <ScalarProperty Name="IdCaSi" ColumnName="IdCaSi" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="GioiThieu" ColumnName="GioiThieu" />
+                <ScalarProperty Name="HinhCaSi" ColumnName="HinhCaSi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyPlayLists">
+            <EntityTypeMapping TypeName="QLWebNgheNhacModel.MyPlayList">
+              <MappingFragment StoreEntitySet="MyPlayList">
+                <ScalarProperty Name="IdBaiHat" ColumnName="IdBaiHat" />
+                <ScalarProperty Name="IdPlayList" ColumnName="IdPlayList" />
+                <ScalarProperty Name="hihi" ColumnName="hihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlayLists">
+            <EntityTypeMapping TypeName="QLWebNgheNhacModel.PlayList">
+              <MappingFragment StoreEntitySet="PlayList">
+                <ScalarProperty Name="IdPlayList" ColumnName="IdPlayList" />
+                <ScalarProperty Name="TenPlayList" ColumnName="TenPlayList" />
+                <ScalarProperty Name="HinhPlayList" ColumnName="HinhPlayList" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="IdTaiKhoan" ColumnName="IdTaiKhoan" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TaiKhoans">
+            <EntityTypeMapping TypeName="QLWebNgheNhacModel.TaiKhoan">
+              <MappingFragment StoreEntitySet="TaiKhoan">
+                <ScalarProperty Name="IdTaiKhoan" ColumnName="IdTaiKhoan" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="NgayDangKy" ColumnName="NgayDangKy" />
+                <ScalarProperty Name="CheckTk" ColumnName="CheckTk" />
+                <ScalarProperty Name="HinhTaiKhoan" ColumnName="HinhTaiKhoan" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TheLoais">
+            <EntityTypeMapping TypeName="QLWebNgheNhacModel.TheLoai">
+              <MappingFragment StoreEntitySet="TheLoai">
+                <ScalarProperty Name="IdTheLoai" ColumnName="IdTheLoai" />
+                <ScalarProperty Name="TenTheLoai" ColumnName="TenTheLoai" />
+                <ScalarProperty Name="HinhTheLoai" ColumnName="HinhTheLoai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

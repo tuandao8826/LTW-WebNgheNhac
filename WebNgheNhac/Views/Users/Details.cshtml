@@ -1,0 +1,51 @@
+﻿@model WebNgheNhac.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "Thông tin tài khoản";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="content-main">
+    <h2>Tổng quan về tài khoản</h2>
+
+    <div class="info-content">
+        <h4>Hồ sơ</h4>
+
+        <div class="info-box">
+            <span class="info-box-title">Họ và tên</span>
+            <span class="info-box-desc">@Model.HoTen</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Email</span>
+            <span class="info-box-desc">@Model.Email</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Ngày sinh</span>
+            <span class="info-box-desc">@Model.NgaySinh</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Giới tính</span>
+            <span class="info-box-desc">@Model.GioiTinh</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Số điện thoại</span>
+            <span class="info-box-desc">@Model.SoDienThoai</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Địa chỉ</span>
+            <span class="info-box-desc">@Model.DiaChi</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Ngày đăng ký</span>
+            <span class="info-box-desc">@Model.NgayDangKy</span>
+        </div>
+    </div>
+
+    @Html.ActionLink("Chỉnh sửa hồ sơ", "Edit", new { id = Session["IdTaiKhoan"] }, new { @class = "info-btn" })
+</div>

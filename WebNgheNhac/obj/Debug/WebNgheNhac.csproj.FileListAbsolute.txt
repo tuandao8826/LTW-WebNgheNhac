@@ -1,0 +1,100 @@
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.dll.config
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.pdb
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\Antlr3.Runtime.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\Newtonsoft.Json.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Helpers.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Mvc.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Optimization.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Razor.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Razor.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\WebGrease.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Helpers.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Mvc.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Optimization.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.Razor.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Razor.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\Newtonsoft.Json.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\Antlr3.Runtime.pdb
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.AssemblyReference.cache
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.CoreCompileInputs.cache
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.CopyComplete
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.pdb
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\EntityFramework.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\EntityFramework.SqlServer.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\EntityFramework.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Đồ Án Web\WebNgheNhac\WebNgheNhac\bin\EntityFramework.SqlServer.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.dll.config
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.pdb
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\Antlr3.Runtime.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\EntityFramework.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\EntityFramework.SqlServer.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\Newtonsoft.Json.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Helpers.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Mvc.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Optimization.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Razor.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Razor.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\WebGrease.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\EntityFramework.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\EntityFramework.SqlServer.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Helpers.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Mvc.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Optimization.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.Razor.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Razor.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\Newtonsoft.Json.xml
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\bin\Antlr3.Runtime.pdb
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.AssemblyReference.cache
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.CoreCompileInputs.cache
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.CopyComplete
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.pdb
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Tài Liệu năm 2\Đồ Án Năm 2\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Tài Liệu năm 2\Đồ Án Năm 2\10_WebNgheNhac\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.pdb
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Tài Liệu năm 2\Đồ án\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.dll
+C:\Users\tuand\OneDrive - Ho Chi Minh City University of Foreign Languages and Information Technology - HUFLIT\Desktop\Tài Liệu năm 2\Đồ án\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.pdb
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.dll.config
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\WebNgheNhac.pdb
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\Antlr3.Runtime.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\EntityFramework.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\EntityFramework.SqlServer.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\Microsoft.Web.Infrastructure.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\Newtonsoft.Json.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Helpers.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Mvc.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Optimization.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Razor.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Deployment.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Razor.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\WebGrease.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\EntityFramework.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\EntityFramework.SqlServer.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Helpers.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Mvc.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Optimization.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.Razor.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Deployment.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\System.Web.WebPages.Razor.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\Newtonsoft.Json.xml
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\bin\Antlr3.Runtime.pdb
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.AssemblyReference.cache
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.CoreCompileInputs.cache
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.csproj.CopyComplete
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.dll
+C:\Huflit_Study_Material\Project\Đồ án Web - Web nghe nhạc online\WebNgheNhac\WebNgheNhac\obj\Debug\WebNgheNhac.pdb

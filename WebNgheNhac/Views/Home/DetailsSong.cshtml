@@ -1,0 +1,76 @@
+﻿@model IEnumerable<WebNgheNhac.Models.BaiHat>
+@{
+    ViewBag.Title = "Chi tiết bài hát";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+    var itemDetailsSong = ViewBag.Song;
+    var count = 1;
+}
+
+<div class="create-playlist-container">
+    <div class="playlist">
+        <!-- phần thông tin playlist -->
+        <div class="playlist__info">
+            <div class="playlist__info-img" style="background-image: url(../../Assets/Img/@itemDetailsSong.HinhBaiHat)"></div>
+
+            <div class="playlist__info-desc">
+                <h2 class="playlist__info-name">@itemDetailsSong.TenBaiHat</h2>
+
+                <p class="playlist__info-intro div-overflow">
+                    <b>Ca sĩ: </b>@itemDetailsSong.CaSi.HoTen
+                </p>
+
+                <span class="playlist__info-count-song">
+                    <b>Số lượng bài hát: </b>@Model.Count()
+                </span>
+            </div>
+        </div>
+
+        <div class="div-line"></div>
+
+        <!-- phần những bài hát trong playlist -->
+        <div class="playlist__songs" style="margin-top: 24px; padding: 24px 32px 110px; background-image: var(--bg-container-main);">
+            <!-- danh sách bài hát đã thêm vào playlist -->
+            <div class="playlist__songs-list">
+                <!-- tiêu đề -->
+                <div class="songs-list__container">
+                    <div class="songs-list__container-item">#</div>
+                    <div class="songs-list__container-item">Tiêu đề</div>
+                </div>
+
+                <div class="div-line"></div>
+
+                @foreach (var itemSong in Model)
+                {
+                    <!-- danh sách bài hát -->
+                    <div class="songs-list">
+                        <div class="songs-list__container">
+                            <div class="songs-list__container-item songs-list__container-item-play">
+                                <input type="hidden" id="TenBaiHat" value="@itemSong.TenBaiHat" />
+                                <input type="hidden" id="TenCaSi" value="@itemSong.CaSi.HoTen" />
+                                <input type="hidden" id="LinkBaiHat" value="~/Assets/Musics/@itemSong.LinkBaiHat" />
+                                <input type="hidden" id="HinhBaiHat" value="../../Assets/Img/@itemSong.HinhBaiHat" />
+
+                                <i class="count">@count</i>
+                                <i class="songs-list__container-icon songs-list__container-icon-play fa-solid fa-play" style="padding-left: 2px"></i>
+                                <i class="songs-list__container-icon songs-list__container-icon-pause fa-solid fa-pause"></i>
+                            </div>
+
+                            <div class="songs-list__container-item">
+                                <div class="songs-list__info">
+                                    <div class="songs-list__info-img" style="background-image: url(../../Assets/Img/@itemSong.HinhBaiHat)"></div>
+
+                                    <div class="songs-list__info-desc">
+                                        <p class="songs-list__info-name">@itemSong.TenBaiHat</p>
+                                        <p class="songs-list__info-singer">@itemSong.CaSi.HoTen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    count = count + 1;
+                }
+            </div>
+        </div>
+    </div>
+</div>

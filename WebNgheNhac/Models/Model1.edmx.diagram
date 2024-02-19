@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="390db1dd8b2d4b0ca15c2523444baa58" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="QLWebNgheNhacModel.Album" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLWebNgheNhacModel.BaiHat" Width="1.5" PointX="5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLWebNgheNhacModel.CaSi" Width="1.5" PointX="1.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLWebNgheNhacModel.MyPlayList" Width="1.5" PointX="7.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLWebNgheNhacModel.PlayList" Width="1.5" PointX="9.875" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLWebNgheNhacModel.TaiKhoan" Width="1.5" PointX="9.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLWebNgheNhacModel.TheLoai" Width="1.5" PointX="1.25" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="QLWebNgheNhacModel.FK__Album__IdCaSi__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="QLWebNgheNhacModel.FK__BaiHat__IdAlbum__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="QLWebNgheNhacModel.FK__BaiHat__IdCaSi__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLWebNgheNhacModel.FK__BaiHat__IdTheLoa__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="QLWebNgheNhacModel.FK__MyPlayLis__IdBai__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="QLWebNgheNhacModel.FK__MyPlayLis__IdPla__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="QLWebNgheNhacModel.FK__PlayList__IdTaiK__48CFD27E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

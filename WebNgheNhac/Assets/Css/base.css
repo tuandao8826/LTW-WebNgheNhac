@@ -1,0 +1,64 @@
+﻿/*
+    file này dùng chứa các css selector dùng chung cho các trang khác
+*/
+
+/* các thuộc tính dùng chung */
+:root {
+    --bg-primary-color: linear-gradient(to right, #BE0081, #0A0E65);
+    --text-color: #000;
+    --white-color: #fff;
+    --line-color: #282828;
+    --btn-hover: #282828;
+    --width-taskbar: 268px;
+    --text-not-hover: #B3B3B3;
+    --height-header: 64px;
+    --height-footer-audio: 90px;
+    --bg-container-main: linear-gradient(0, #202020, #202020);
+    --height-header-account: 80px;
+    --btn-hover-account: #1ED660;
+}
+
+/* reset lại margin và padding cho các thẻ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /* thiết lập mặc định cho thẻ a không có gạch chân bên dưới */
+    list-style-type: none; /* thiết lập mặc định cho thẻ danh sách không có nốt dòng */
+}
+
+html {
+    font-family: Helvetica; /* font chữ dùng chung cho toàn bộ trang web */
+    font-size: 62.5%; /* thiết lập font chữ mặc định là 10px = 1rem, sử dụng font-size bằng rem nha mn */
+    line-height: 1.6; /* khoảng cao của chữ */
+}
+
+/* line */
+.div-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--line-color);
+    background-clip: content-box;
+}
+
+.div-line.p-0-16 {
+    padding: 0 16px;
+}
+
+.div-line.p-0-24 {
+    padding: 0 24px;
+}
+
+.div-line.p-0-32 {
+    padding: 0 32px;
+}
+
+.div-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.m-b-24px {
+    margin-bottom: 24px;
+}

@@ -1,0 +1,83 @@
+﻿@model WebNgheNhac.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "Sửa hồ sơ";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="content-main">
+    <h2>Chỉnh sửa hồ sơ</h2>
+
+    @using (Html.BeginForm("Edit", "Users", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    { 
+        @Html.AntiForgeryToken();
+
+        <div class="edit">
+            @Html.HiddenFor(model => model.IdTaiKhoan)
+            @Html.HiddenFor(model => model.Username)
+            @Html.HiddenFor(model => model.MatKhau)
+            @Html.HiddenFor(model => model.HinhTaiKhoan)
+            @Html.HiddenFor(model => model.NgayDangKy)
+            @Html.HiddenFor(model => model.CheckTk)
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.HoTen, "Họ và tên", htmlAttributes: new { @class = "edit__box-label" })
+                @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "edit__box-input" } })
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.Email, "Email", htmlAttributes: new { @class = "edit__box-label" })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "edit__box-input" } })
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.SoDienThoai, "Số điện thoại", htmlAttributes: new { @class = "edit__box-label" })
+                @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "edit__box-input" } })
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.GioiTinh, "Giới tính", htmlAttributes: new { @class = "edit__box-label" })
+                <select id="GioiTinh" name="GioiTinh" class="edit__box-selecet">
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Khác">Khác</option>
+                </select>
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.NgaySinh, "Ngày sinh", htmlAttributes: new { @class = "edit__box-label" })
+                <input class="edit__box-input" type="date" name="NgaySinh" id="NgaySinh" value="@Model.NgaySinh"/>
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.DiaChi, "Địa chỉ",htmlAttributes: new { @class = "edit__box-label" })
+                <select id="DiaChi" name="DiaChi" class="edit__box-selecet">
+                    <optgroup label="MIỀN BẮC">
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Nam Định">Nam Định</option>
+                    </optgroup>
+                    <optgroup label="MIỀN NAM">
+                        <option value="Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                        <option value="Bình Dương">Bình Dương</option>
+                        <option value="Vũng Tàu">Vũng Tàu</option>
+                        <option value="Đồng Nai">Đồng Nai</option>
+                    </optgroup>
+                    <optgroup label="MIỀN TRUNG">
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Nha Trang">Nha Trang</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="edit__box">
+                @Html.LabelFor(model => model.HinhTaiKhoan, "Ảnh đại diện", htmlAttributes: new { @class = "edit__box-label" })
+                <input type="file" name="HinhTaiKhoan" id="HinhTaiKhoan" style="font-size: 1.6rem;"/>
+            </div>
+        </div>
+
+        <div class="edit-submit">
+            @Html.ActionLink("Hủy", "Details", new { id = Session["IdTaiKhoan"] }, new { @class = "edit-submit__btn" })
+            <input class="edit-submit__btn" type="submit" name="name" value="Lưu hồ sơ" />
+        </div>
+    }
+</div>

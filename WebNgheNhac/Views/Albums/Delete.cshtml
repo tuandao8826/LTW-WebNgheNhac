@@ -1,0 +1,41 @@
+﻿@model WebNgheNhac.Models.Album
+
+@{
+    ViewBag.Title = "Xóa Album";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="content-main">
+    <h2>Tổng quan về Album</h2>
+
+    <h1 style="color:red">Bạn có chắc muốn xóa Album này không?</h1>
+
+    <div class="info-content">
+        <h4>Thông tin Album</h4>
+        <div class="info-box">
+            <span class="info-box-title">ID</span>
+            <span class="info-box-desc">@Model.IdAlbum</span>
+        </div>
+        <div class="info-box">
+            <span class="info-box-title">Tên Album</span>
+            <span class="info-box-desc">@Model.TenAlbum</span>
+        </div>
+
+        <div class="info-box">
+            <span class="info-box-title">Ca sĩ</span>
+            <span class="info-box-desc">@Model.CaSi.HoTen</span>
+        </div>
+        <div class="info-box">
+            <span class="info-box-title">Hình Album</span>
+            <span class="info-box-desc">@Model.HinhAlbum</span>
+        </div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="edit-submit" style="margin-top:20px">
+                @Html.ActionLink("Hủy", "Index", null, new { @class = "info-btn" })
+                <input type="submit" value="Xóa" class="edit-submit__btn" />
+            </div>
+        }
+    </div>
+</div>
